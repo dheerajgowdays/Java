@@ -1,13 +1,17 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
 
 public class hello
 {
     public static void main (String args[])
     {
-        int num[] ={5,6,7,8,9,10};
-        
-        for(int i=0;i<3;i++)
-        {
-        System.out.println(num[i]);
-        }
+        List <Integer> nums = Arrays.asList(4,8,2,3,1);
+        Consumer<Integer> con = new Consumer<Integer>() {
+            public void accept(Integer n){
+                System.out.println(n);
+            }
+        };
+        nums.forEach(con);
     }
 }

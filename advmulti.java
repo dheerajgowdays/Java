@@ -1,3 +1,4 @@
+
 class advmulti extends calc {
     public int multi(int a, int b)
     {

@@ -1,3 +1,4 @@
+
 class supermulti extends advmulti{
     public int pow(int a , int b)
     {

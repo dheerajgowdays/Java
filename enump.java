@@ -1,5 +1,6 @@
 
 
+
 enum laptop{
     Macbook(2000),XPS(2500),Surface(),Thinkpad(1800);
 

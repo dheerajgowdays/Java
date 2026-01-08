@@ -1,4 +1,3 @@
-package HackerRank ;
 import java.util.*;
 public class problem3 {
     public static void main(String[] args) {
@@ -11,5 +10,6 @@ public class problem3 {
         else{
             System.out.println("Wrong answer");
         }
+        s.close();
     }
 }

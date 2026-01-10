@@ -1,5 +1,3 @@
-package GeeksforGeeks;
-
 import java.util.Scanner;
 
 class fact{

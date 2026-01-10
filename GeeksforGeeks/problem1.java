@@ -1,4 +1,3 @@
-package GeeksforGeeks;
 
 import java.util.Scanner;
 

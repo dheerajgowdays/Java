@@ -1,4 +1,4 @@
-package GeeksforGeeks;
+
 import java.util.Scanner;
 public class gfg {
     public static void main(String args[]){

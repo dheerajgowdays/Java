@@ -1,8 +1,8 @@
 import java.util.*;
 public class problem1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
 
         if (n % 2 != 0) {
             System.out.println("Weird");
@@ -13,6 +13,6 @@ public class problem1 {
         } else {
             System.out.println("Not Weird");
         }
-        scanner.close();
+        s.close();
     }
 }

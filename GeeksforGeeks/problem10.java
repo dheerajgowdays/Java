@@ -1,3 +1,5 @@
+//Check Odd or Even
+
 import java.util.Scanner;
 class oddoreven{
     public void check(Integer a){

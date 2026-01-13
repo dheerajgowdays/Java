@@ -1,3 +1,5 @@
+//Simple Interst
+
 import java.util.Scanner;
 class SI{
     public void si(Integer p,Integer r,Integer t){

@@ -1,19 +1,22 @@
-//Prime Numbers
+import java.util.*;
+class problem15 {
+    public ArrayList<Integer> calc(int a) {
+        ArrayList<Integer> primes = new ArrayList<>();
 
-import java.util.Scanner;
-class PrimeNumber{
-    public void calc(Integer a){
-        
+        for (int i = 2; i <= a; i++) {
+            boolean isPrime = true;
+
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                primes.add(i);
+            }
+        }
+        return primes;
     }
-}
-public class problem15 {
-    public static void main(String args[]){
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter a Number:");
-        int a = s.nextInt();
-        PrimeNumber obj = new PrimeNumber();
-        obj.calc(a);
-        s.close();
-    }
-    
 }

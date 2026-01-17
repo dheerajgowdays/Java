@@ -1,23 +1,28 @@
 import java.util.Scanner;
-
-//Compound Interst
-class CompoundInterst{
-    public void CI(Double p , Double r, Double t){
-        System.out.println("Compund Interst ="+p*Math.pow(1+(r/100),t));
+class greatest{
+    public void largest(Integer a,Integer b, Integer c){
+        if(a>b && a>c){
+            System.out.println("Largest is: "+a);
+        }
+        else if(b>a && b>c){
+            System.out.println("Largest is: "+b);
+        }
+        else{
+            System.out.println("Largest is: "+c);
+        }
     }
 }
 
 public class problem11 {
     public static void main (String args[]){
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter Principal Amoutnt: ");
-        double p = s.nextDouble();
-        System.out.print("Enter Rate Of Interst: ");
-        double r = s.nextDouble();
-        System.out.print("Enter Time Span: ");
-        double t = s.nextDouble();
-        CompoundInterst obj = new CompoundInterst();
-        obj.CI(p,r,t);
-        s.close();
+        System.out.println("Enter Number A: ");
+        int a = s.nextInt();
+        System.out.println("Enter Number B: ");
+        int b = s.nextInt();
+        System.out.println("Enter Number C: ");
+        int c = s.nextInt();
+        greatest obj = new greatest();
+        obj.largest(a,b,c);
     }
 }

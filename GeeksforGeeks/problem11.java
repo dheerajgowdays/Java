@@ -24,5 +24,6 @@ public class problem11 {
         int c = s.nextInt();
         greatest obj = new greatest();
         obj.largest(a,b,c);
+        s.close();
     }
 }

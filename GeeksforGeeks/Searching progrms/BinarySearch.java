@@ -25,10 +25,10 @@ public class BinarySearch {
         int a[] = {3,4,7,8,9,12,17};
         System.out.print("Enter number to search:");
         int x = s.nextInt();
-        search obj = new search();
-        int index = obj.searching(a,x);
+        search b = new search();
+        int index = b.searching(a,x);
         if (index == -1){
-            System.out.println("Number is not found");
+            System.out.println("Number is not found ");
         }
         else{
             System.out.println("Number is found at index:"+index);

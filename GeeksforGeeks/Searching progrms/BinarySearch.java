@@ -1,19 +1,19 @@
 import java.util.*;
 class search{
     public int searching(int a[],int x){
-        int len = a.length;
-        int start =  0;
-        int end = len-1;
-        while (start <= end){
-            int mid = (start + end)/2;
+        int l = a.length;
+        int s =  0;
+        int e = l-1;
+        while (s <= e){
+            int mid = (s + e)/2;
         if (a[mid] == x){
             return mid;
         }
         else if (a[mid]>x){
-            end =mid-1;
+            e=mid-1;
         }
         else{
-            start = mid+1;
+            s = mid+1;
         }
     }
     return -1;

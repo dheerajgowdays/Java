@@ -1,18 +1,21 @@
 import java.util.Scanner;
 
-public class Selection {
+public class Bubble {
     public static int[] sorting(int a[],int n){
-        for(int i=0;i<=n-2;i++){
-            int num = i;
-            for(int j=i+1;j<=n-1;j++){
-                if(a[j]<a[num])
-                    num = j;
+        for(int i=n-1;i>=1;i--){
+            int didswap = 0;
+            for(int j=0;j<=i-1;j++){
+                if(a[j]>a[j+1]){
+                    int  temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                    didswap = 1;
+                }
             }
-            int temp = a[num];
-            a[num]=a[i];
-            a[i]=temp;
-        }
-        return a;
+            if(didswap == 0 )
+                break;
+    }
+    return a;
     }
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -25,8 +28,8 @@ public class Selection {
     }
     sorting(a, n);
     for(int i=0;i<n;i++){
-        System.out.println("Sorted array is:"+a[i]);
+        System.out.println(a[i]);
     }
-    sc.close();    
-    }
+    sc.close();
+}
 }

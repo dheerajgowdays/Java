@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Mergesort {
-    public static void merge(int a[],int low,int mid,int high){
-        int temp[] = new int[high-low+1];
-        int left = low;
-        int right = mid+1;
+    public static void merge(int a[],int l,int m,int h){
+        int temp[] = new int[h-l+1];
+        int left = l;
+        int right = m+1;
         int k = 0;
-        while((left <= mid)&&(right <= high)){
+        while((left <= m)&&(right <= h)){
             if(a[left]<a[right]){
                 temp[k++] = a[left];
                 left++;
@@ -16,16 +16,16 @@ public class Mergesort {
                 right++;
             }
         }
-        while(left<=mid){
+        while(left<=m){
             temp[k++] = a[left];
             left++;
         }
-        while(right<=high){
+        while(right<=h){
             temp[k++]=a[right];
             right++;
         }
-        for(int i=low;i<=high;i++){
-            a[i] = temp[i-low];
+        for(int i=l;i<=h;i++){
+            a[i] = temp[i-l];
         } 
     }
     public static void mergesort(int a[],int low,int high){

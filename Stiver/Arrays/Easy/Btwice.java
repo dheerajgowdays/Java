@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class Btwice{
-    static int twice(int array[],int size){
+    static int twice(int a[],int size){
         for(int i=0;i<size;i++){
             int cnt = 0;
             for(int j=0;j<size;j++){
-                if(array[i]==array[j])
+                if(a[i]==a[j])
                     cnt++;
             }
             if (cnt==1){
-                return array[i];
+                return a[i];
             }
         }
         return -1;
